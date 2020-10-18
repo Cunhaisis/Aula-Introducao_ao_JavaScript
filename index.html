@@ -4,59 +4,111 @@
 <head>
     <title>Minha página</title>
     <meta charset="utf-8">
-    <script type="text/javascript" src="main.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-
+    <title>Tela de Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-
 <body>
-    <form action="form" id="formulario" method="post">
-        <fieldset id="fieldset1" class="active">
-            <legend>Informações de Perfil</legend>
-            <div class="form-group">
-                <label>Nome</label>
-                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required />
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem-Vindo(a) de Volta</h2>
+                <p class="description description-primary">Para continuar o Acesso</p>
+                <p class="description description-primary">por favor logar com as suas informações</p>
+                <button id="signin" class="btn btn-primary">sign in</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar Conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">ou use o seu email para cadastro:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">Entrar</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, Amigo!</h2>
+                <p class="description description-primary">Entrar com seus dados pessoais</p>
+                <p class="description description-primary">e começar uma jornada com a gente</p>
+                <button id="signup" class="btn btn-primary">Logar</button>
             </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="text" class="form-control" name="email" id="email" placeholder="Digite seu email"
-                    required />
-            </div>
-            <div class="form-group">
-                <label>Senha</label>
-                <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite sua senha"
-                    required />
-            </div>
-            <div>
-                <fieldset id="fieldset2">
-                    <legend>Informações Complementares</legend>
-                    <div class="form-group">
-                        <label>Endereço</label>
-                        <input type="text" class="form-control" name="endereco" id="endereco"
-                            placeholder="Digite seu endereço" required />
-                    </div>
-                    <div class="form-group">
-                        <label>Telefone</label>
-                        <input type="text" class="form-control" name="telefone" id="telefone"
-                            placeholder="Digite seu telefone" required />
-                    </div>
-                </fieldset>
-
-            </div>
-            <div>
-                <div id="buttons">
-                    <button id="voltar" class="btn btn-default hidden" type="button">Voltar</button>
-                    <button id="avancar" class="btn btn-default" type="button">Avançar</button>
-                    <button type="submit" class="btn btn-primary hidden" name="concluir" id="concluir">Concluir</button>
-                </div>
-
-            </div>
-
-        </fieldset>
-    </form>
-
+            <div class="second-column">
+                <h2 class="title title-second">Entrar como Desenvolvedor</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">ou usar seu email para cadastro</p>:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu a Senha?</a>
+                    <button class="btn btn-second">sign in</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
